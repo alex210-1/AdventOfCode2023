@@ -135,7 +135,7 @@ impl PlantMap {
     }
 }
 
-fn main() {
+pub fn run() {
     let input = read_to_string("./ex5-1.txt").unwrap();
 
     let start = SystemTime::now().duration_since(UNIX_EPOCH).unwrap();

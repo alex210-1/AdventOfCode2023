@@ -3,7 +3,7 @@ use std::{fs::File, io::BufReader};
 
 use regex::Regex;
 
-fn main() {
+pub fn run() {
     let re = Regex::new(r"\d+").unwrap();
 
     let mut symbols = [[false; 150]; 150];

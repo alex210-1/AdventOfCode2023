@@ -3,7 +3,7 @@ use std::default;
 use std::io::BufRead;
 use std::{fs::File, io::BufReader};
 
-fn parse_line(line: &str, regex: &Regex) -> usize {
+pub fn parse_line(line: &str, regex: &Regex) -> usize {
     if let Some(caps) = regex.captures(line) {
         return match caps.get(0).unwrap().as_str() {
             "0" | "zero" | "orez" => 0,
@@ -22,7 +22,7 @@ fn parse_line(line: &str, regex: &Regex) -> usize {
     panic!();
 }
 
-fn main() {
+fn run() {
     let in_file = File::open("./ex1-2.txt").unwrap();
     let reader = BufReader::new(in_file);
 

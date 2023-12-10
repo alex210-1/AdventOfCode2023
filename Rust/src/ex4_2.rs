@@ -22,7 +22,7 @@ fn get_score(card: &str) -> usize {
     return having.iter().filter(|val| winning.contains(val)).count();
 }
 
-fn main() {
+pub fn run() {
     let in_file = File::open("./ex4-1.txt").unwrap();
     let reader = BufReader::new(in_file);
 

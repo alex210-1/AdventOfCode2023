@@ -4,7 +4,7 @@ use std::{fs::File, io::BufReader};
 use itertools::{Dedup, Itertools};
 use regex::Regex;
 
-fn main() {
+pub fn run() {
     let re = Regex::new(r"\d+").unwrap();
 
     let mut symbols = [[-1; 150]; 150];

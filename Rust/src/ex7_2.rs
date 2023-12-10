@@ -142,7 +142,7 @@ enum Rank {
     Distinct = 1,
 }
 
-fn main() {
+pub fn run() {
     let re = Regex::new(r"([2-9TJQKA]+) (\d+)").unwrap();
 
     let in_file = File::open("./ex7-1.txt").unwrap();

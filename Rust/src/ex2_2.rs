@@ -4,7 +4,7 @@ use std::{fs::File, io::BufReader};
 
 use regex::Regex;
 
-fn main() {
+pub fn run() {
     let re = Regex::new(r"(\d+) (red|green|blue)").unwrap();
 
     let in_file = File::open("./ex2-1.txt").unwrap();
