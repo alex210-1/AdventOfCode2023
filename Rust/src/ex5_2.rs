@@ -1,5 +1,3 @@
-#![feature(iter_array_chunks)]
-
 use itertools::Itertools;
 use lazy_static::lazy_static;
 use regex::Regex;
